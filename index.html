@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Quiz Game</title>
+</head>
+<body>
+    <main >
+        <div class="lg:w-[35%] lg:ml-102 mt-28 shadow-2xl rounded-md mr-2 ml-2">
+            <div id="begin">
+                <p class="lg:text-4xl text-2xl text-center pt-24">Web Development Quiz</p>
+                <button class="bg-blue-600 px-10 lg:px-20 py-2 mt-6 mb-5 ml-24 ml-36 lg:ml-32 rounded-md hover:bg-blue-400" id="start">Start Game</button>
+            </div>
+            
+            <div class="hidden" id="mainGame">
+                <div class="flex justify-between pt-10 ">
+                    <span class="text-xl ml-10">Question <span id="count"></span> of 5</span>
+                </div>
+                <p class="text-3xl ml-8 mt-6" id="Question">hello</p>
+                <div class="flex flex-col pb-6 ml-7 mr-6 pt-8" id="answer-container">
+                    <!-- <div class="bg-gray-400 pl-4 py-2 rounded-md hover:bg-gray-200">hello</div>
+                    <div class="bg-gray-400 pl-4 py-2 mt-4 rounded-md hover:bg-gray-200">hello</div>
+                    <div class="bg-gray-400 pl-4 py-2 mt-4 rounded-md hover:bg-gray-200">hello</div>
+                    <div class="bg-gray-400 pl-4 py-2 mt-4 rounded-md hover:bg-gray-200">hello</div> -->
+                </div>   
+                <button class="bg-blue-600 px-20 py-2  mb-5 ml-36 lg:ml-64 rounded-md hover:bg-blue-400 hidden" id="next">Next</button>
+            </div>
+
+            <div class="hidden" id="finish">
+                    <p class="text-4xl text-center pt-10">GAME OVER</p> 
+                    <p class="text-5xl font-semibold pb-5 pl-10 text-center mt-8">Your score is <span id="scoreTab">0</span></p> 
+                    <button class="bg-blue-600 px-20 py-2 mt-6 mb-5 ml-24 lg:ml-32 rounded-md hover:bg-blue-400" id="over">Start Over</button>
+                </div>
+        </div>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>
