@@ -17,7 +17,7 @@ const questions = [
     {
       question: "What is the result of [] + [] in JavaScript?",
       options: ["0", "[]", "\"\"", "undefined"],
-      answer: "\"\""
+      answer: "undefined"
     },
     {
       question: "Which of the following is NOT a primitive data type in JavaScript?",
